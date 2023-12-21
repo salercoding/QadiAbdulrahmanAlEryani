@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Background and Text Color*/
+.home, .gallery, .memoirs {
+  background-color: rgb(47, 41, 65);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/*Language Nav*/
+.primaryNav {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.dropbtn {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: rgba(47, 41, 65, 0.9);
+  font-family: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 15px;
+}
+.dropbtn:hover {
+  color: black;
+}
+.langbtnA, .langbtnB {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  width: 100px;
+  margin: 0px;
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+.langbtnA {
+  border-style: none double none none;
+}
+.langbtnB {
+  border: none;
+}
+.dropdown .dropdown-menu {
+  position: absolute;
+  display: none;
+}
+.dropdown:hover .dropdown-menu {
+  display: inline-flex;
+}
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  align-content: space-between;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  nav ul li {
+    padding: 5px 20px;
+}
+
+
+nav ul li a {
+  color:rgb(47, 41, 65);
+  border:outset rgba(47, 41, 65, 0.9);
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 30px;
+  text-decoration: none;
+}
+/* Home Page */
+.home h1 {
+  height: 100px;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.home h2 {
+  display: inline-flex;
+  color: white;
+}
+.home img {
+  /*display: block;
+  margin-left: auto;
+  margin-right: auto;*/
+  position: absolute;
+  margin-left: 5%;
+  height: 500px;
+  width: auto;
+}
+.intro {
+  position: relative;
+  height: 500px;
+  width: 35%;
+  margin-right: 5%;
+  padding-left: 10%;
+  left: 50%;
+  top: 50%;
+  background-color:rgb(47, 41, 65);
+}
+.greeting {
+  height: 100px;
+  width: 90%;
+  position: relative;
+  left: 5%;
+  bottom: 140px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  background-color: rgba(47, 41, 65, 0.2);
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+/*Timeline 
+.odd {
+  display: grid;
+  grid-template-columns: 1fr 6fr 3fr;
+  margin: 50px 20px;
+}
+.even {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  margin: 50px 20px;
+}
+.date {
+  justify-self: center;
+}
+.info {
+  justify-self: center;
+}
+.timeline-image {
+  height: 200px;
+  width: auto;
+  justify-self: start;
+}*/
+/* gallery page */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  height: auto;
+  width: 600px;
+  padding: 30px;
+}
+
+/* memoirs page */
+.memoirs a {
+  display: inline-block;
+  margin: 20px;
 }
