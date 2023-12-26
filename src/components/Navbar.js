@@ -1,11 +1,11 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 
-//import Languages from "./languageNav";
+import Languages from "./languageNav";
 
 const Navbar = () => (
 	<div class="primaryNav">
-{	/*<Languages />*/}
+<Languages />
 	<nav>
 	  <ul>
 		<li><NavLink to='/'>Home</NavLink></li>
