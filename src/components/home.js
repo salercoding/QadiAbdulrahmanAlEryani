@@ -1,14 +1,14 @@
 import React from "react";
-//import {useTranslation} from "react-i18next";
+import {useTranslation} from "react-i18next";
 
 
 
 
 const Home = () => {
-  //const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
   <div class="home">
-    <h1>Title</h1>
+    <h1>{t('name')}</h1>
     <img src="images/home-image-2.jpeg"/>
     <div class="intro">
     <h2>Intro Message</h2>

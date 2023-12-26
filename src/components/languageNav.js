@@ -18,7 +18,6 @@ const GlobeIcon = ({ width = 24, height = 24 }) => (
 );
 
 function Languages() {
-  const { t } = useTranslation();
   return (
     <div className="dropdown">
       <button className="dropbtn" type="button">
