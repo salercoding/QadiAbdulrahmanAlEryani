@@ -136,7 +136,7 @@ nav ul li a {
   width: auto;
   justify-self: start;
 }*/
-/* gallery page */
+/* gallery page 
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -146,7 +146,7 @@ nav ul li a {
   height: auto;
   width: 600px;
   padding: 30px;
-}
+}*/
 
 /* memoirs page */
 .memoirs {
@@ -157,5 +157,33 @@ nav ul li a {
 .memoirs img {
   width: 80%;
   height: auto;
-  padding: 50px 10px;
+  padding: 50px 30px;
+}
+/* gallery*/
+.containerGalleryA {
+  display: grid;
+  grid-template-columns: repeat(8, 2fr);
+  column-gap: 50px;
+  row-gap: 20px;
+  overflow: hidden;
+}
+.containerGalleryA img {
+  width: 500px;
+  padding: 10px 30px 10px 80px;
+}
+.typeA {
+  grid-row: 1 / span 1;
+}
+.typeA img {
+  grid-column: 1 / span 3;
+}
+.typeA h3 {
+  grid-column: 4 / span 1;
+  border: solid white;
+}
+.typeA p {
+  grid-column: 5 / span 3;
+}
+.typeB {
+  grid-row: 2 / span 1;
 }
