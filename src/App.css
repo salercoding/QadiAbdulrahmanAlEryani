@@ -3,6 +3,12 @@
   background-color: rgb(47, 41, 65);
   color: white;
 }
+h1 {
+  font-size: 70px;
+}
+h2 {
+  font-size: 50px;
+}
 
 /*Language Nav*/
 .primaryNav {
@@ -112,7 +118,6 @@ nav ul li a {
   background-color: rgba(47, 41, 65, 0.2);
   text-align: center;
   color: white;
-  font-size: 30px;
 }
 /*Timeline 
 .odd {
@@ -149,7 +154,7 @@ nav ul li a {
 }*/
 
 /* memoirs page */
-.memoirs {
+.memoirsContainer {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -160,30 +165,48 @@ nav ul li a {
   padding: 50px 30px;
 }
 /* gallery*/
-.containerGalleryA {
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  left: -10px;
+  top: 0;
+  bottom: 0;
+}
+/* The circles on the timeline */
+.gallery h3 {
+  border-bottom: solid 5px;
+  height: 100px;
+  margin-left: 0px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.containerGallery {
   display: grid;
-  grid-template-columns: repeat(8, 2fr);
+  grid-template-columns: 1fr 8fr 4fr;
   column-gap: 50px;
   row-gap: 20px;
-  overflow: hidden;
 }
-.containerGalleryA img {
-  width: 500px;
-  padding: 10px 30px 10px 80px;
+.containerGallery h3 {
+  grid-column-start: 1;
 }
-.typeA {
-  grid-row: 1 / span 1;
+.containerGallery img {
+  grid-column-start: 2;
+  width: 100%;
+  padding: 30px 10px;
 }
-.typeA img {
-  grid-column: 1 / span 3;
+
+
+.containerGallery p {
+  grid-column-start: 3;
 }
-.typeA h3 {
-  grid-column: 4 / span 1;
-  border: solid white;
-}
-.typeA p {
-  grid-column: 5 / span 3;
-}
-.typeB {
-  grid-row: 2 / span 1;
-}
+

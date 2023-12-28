@@ -6,14 +6,15 @@ import PartThree from "./memoir-part-three.pdf";
 class Memoirs extends Component {
     render() {
         return (
-          <>
-          <h2>Memoirs</h2>
             <div className = "memoirs">
+            <h2>Memoirs</h2>
+            <div className = "memoirsContainer">
               <a href = {PartOne} target = "_blank"><img src="images/memoir-part-one-image.jpg"/></a>
               <a href = {PartTwo} target = "_blank"><img src="images/memoir-part-two-image.jpg"/></a>
               <a href = {PartThree} target = "_blank"><img src="images/memoir-part-three-image.jpg"/></a>
             </div>
-            </>
+            </div>
+        
         );
        
 }

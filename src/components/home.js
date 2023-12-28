@@ -11,9 +11,9 @@ const Home = () => {
     <h1>{t('name')}</h1>
     <img src="images/home-image-2.jpeg"/>
     <div class="intro">
-    <h2>Intro Message</h2>
+    <h3>Intro Message</h3>
     </div>
-    <h3 class="greeting">welcome message</h3>
+    <h2 class="greeting">welcome message</h2>
   </div>
 );
 }

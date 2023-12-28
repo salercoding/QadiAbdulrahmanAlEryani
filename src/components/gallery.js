@@ -13,14 +13,22 @@ function Gallery() {
     <div className="gallery">
       <h2>Gallery</h2>
       <div className="timeline">
-       <div className="containerGalleryA">
-        <img className="typeA" src="images/image-two-test.jpeg"/>
-        <h3 className="typeA">Date</h3>
-        <p className="typeA">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien eget mi proin sed libero enim sed faucibus. At ultrices mi tempus imperdiet nulla malesuada pellentesque. Sed arcu non odio euismod lacinia at. Augue ut lectus arcu bibendum at. Consectetur purus ut faucibus pulvinar elementum integer enim neque. Ipsum dolor sit amet consectetur adipiscing elit duis tristique. Faucibus scelerisque eleifend donec pretium. Tellus orci ac auctor augue mauris augue neque gravida. Justo laoreet sit amet cursus sit. Tellus orci ac auctor augue.</p>
-   
-        <p className="typeB">info</p>
-        <h3 className="typeB">Date</h3>
-        <img className="typeB" src="images/image-two-test.jpeg"/>
+       <div className="containerGallery">
+       <h3>Date</h3>
+        <img src="images/image-two-test.jpeg"/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien eget mi proin sed libero enim sed faucibus. At ultrices mi tempus imperdiet nulla malesuada pellentesque. Sed arcu non odio euismod lacinia at. Augue ut lectus arcu bibendum at. Consectetur purus ut faucibus pulvinar elementum integer enim neque. Ipsum dolor sit amet consectetur adipiscing elit duis tristique. Faucibus scelerisque eleifend donec pretium. Tellus orci ac auctor augue mauris augue neque gravida. Justo laoreet sit amet cursus sit. Tellus orci ac auctor augue.</p>
+        </div>
+        <div className="containerGallery">
+        <h3>Date</h3>
+        <img src="images/image-two-test.jpeg"/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien eget mi proin sed libero enim sed faucibus. At ultrices mi tempus imperdiet nulla malesuada pellentesque. Sed arcu non odio euismod lacinia at. Augue ut lectus arcu bibendum at. Consectetur purus ut faucibus pulvinar elementum integer enim neque. Ipsum dolor sit amet consectetur adipiscing elit duis tristique. Faucibus scelerisque eleifend donec pretium. Tellus orci ac auctor augue mauris augue neque gravida. Justo laoreet sit amet cursus sit. Tellus orci ac auctor augue.</p>
+        </div>
+        <div className="containerGallery">
+        <h3>Date</h3>
+        <img src="images/image-two-test.jpeg"/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien eget mi proin sed libero enim sed faucibus. At ultrices mi tempus imperdiet nulla malesuada pellentesque. Sed arcu non odio euismod lacinia at. Augue ut lectus arcu bibendum at. Consectetur purus ut faucibus pulvinar elementum integer enim neque. Ipsum dolor sit amet consectetur adipiscing elit duis tristique. Faucibus scelerisque eleifend donec pretium. Tellus orci ac auctor augue mauris augue neque gravida. Justo laoreet sit amet cursus sit. Tellus orci ac auctor augue.</p>
+        
+        
       </div>
       </div>
       </div>
