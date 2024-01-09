@@ -161,6 +161,7 @@ nav ul li a {
 }
 .memoirs img {
   width: 80%;
+  filter: grayscale(100%);
   height: auto;
   padding: 50px 30px;
 }
