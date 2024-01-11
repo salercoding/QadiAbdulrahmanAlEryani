@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
+import cookies from "js-cookie";
+
 
 
 
@@ -17,7 +19,27 @@ const GlobeIcon = ({ width = 24, height = 24 }) => (
   </svg>
 );
 
+const arOrEn = [
+  {
+    code: 'ar',
+    name: 'العربية',
+    dir: 'rtl'
+  },
+  {
+    code: 'en',
+    name: 'English',
+    dir: 'ltr'
+  }
+];
+
 function Languages() {
+  const { t } = useTranslation();
+  const currentLanguageCode = cookies.get("i18next");
+  const currentLanguage = arOrEn.find((l) => l.code === currentLanguageCode);
+  useEffect(() => {
+    document.body.dir = currentLanguage.dir
+    document.title = t('name')
+  }, [currentLanguage, t]);
   return (
     <div className="dropdown">
       <button className="dropbtn" type="button">
