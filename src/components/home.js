@@ -8,8 +8,8 @@ const Home = () => {
   const { t } = useTranslation();
   return (
   <div class="home">
-    <h1>{t('name')}</h1>
-    <img src="images/home-image-2.jpeg"/>
+    <h1 class="header">{t('name')}</h1>
+    <img class="img" src="images/home-image-2.jpeg"/>
     <div class="intro">
     <h3>Intro Message</h3>
     </div>

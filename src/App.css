@@ -50,7 +50,7 @@ h2 {
   display: none;
 }
 .dropdown:hover .dropdown-menu {
-  display: inline-flex;
+  display: flex;
 }
 /* Navigation */
 nav ul {
@@ -75,49 +75,33 @@ nav ul li a {
   font-size: 30px;
   text-decoration: none;
 }
-/* Home Page */
-.home h1 {
+.home {
+  display: grid;
+  padding: 15px;
+  grid-template-columns: repeat 3(4fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    ". img main main"
+    "footer footer footer footer";
+}
+.header {
+  grid-area: header;
   height: 100px;
-  width: 90%;
-  margin-left: 5%;
-  padding-top: 20px;
-  margin-bottom: 0px;
   text-align: center;
+  align-self: center;
 }
-.home h2 {
-  display: inline-flex;
-  color: white;
-}
-.home img {
-  /*display: block;
-  margin-left: auto;
-  margin-right: auto;*/
-  position: absolute;
-  margin-left: 5%;
+.img {
+  grid-area: img;
   height: 500px;
   width: auto;
 }
 .intro {
-  position: relative;
-  height: 500px;
-  width: 35%;
-  margin-right: 5%;
-  padding-left: 10%;
-  left: 50%;
-  top: 50%;
-  background-color:rgb(47, 41, 65);
+  grid-area: main;
 }
 .greeting {
-  height: 100px;
-  width: 90%;
-  position: relative;
-  left: 5%;
-  bottom: 140px;
-  padding-top: 20px;
-  padding-bottom: 0px;
-  background-color: rgba(47, 41, 65, 0.2);
-  text-align: center;
-  color: white;
+  grid-area: footer;
+  background-color: rgba(0, 0, 0, .1);
 }
 /*Timeline 
 .odd {
@@ -178,7 +162,6 @@ nav ul li a {
   position: absolute;
   width: 6px;
   background-color: white;
-  left: -10px;
   top: 0;
   bottom: 0;
 }
